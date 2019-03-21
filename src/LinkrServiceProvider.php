@@ -21,7 +21,7 @@ class LinkrServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . '/../config/linkr.php', 'linkr');
 
         $this->app->singleton('linkr', function () {
-            return new LinkrClient(config('linkr.url'), config('linkr.key'));
+            return new LinkrClient(config('linkr.url'), config('linkr.key'), max(3, intval(config('linkr.length'))));
         });
     }
 }

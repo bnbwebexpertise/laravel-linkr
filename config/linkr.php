@@ -3,4 +3,5 @@
 return [
     'url' => env('LINKR_URL'),
     'key' => env('LINKR_KEY'),
+    'length' => env('LINKR_LENGTH', 6),
 ];
