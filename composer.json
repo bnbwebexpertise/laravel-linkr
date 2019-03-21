@@ -1,0 +1,40 @@
+{
+  "name": "bnbwebexpertise/laravel-linkr",
+  "description": "Laravel package to use PHP Linkr Client",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "B&B Web Expertise",
+      "email": "support@bnb.re"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "illuminate/support": ">=5.5",
+    "bnbwebexpertise/linkr-php-client": ">=1.0"
+  },
+  "require-dev": {
+    "laravel/framework": ">=5.5"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Bnb\\Laravel\\Linkr\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Bnb\\Laravel\\Linkr\\LinkrServiceProvider"
+      ],
+      "aliases": {
+        "Linkr": "Bnb\\Laravel\\Linkr\\Facades\\Linkr"
+      }
+    }
+  }
+}
