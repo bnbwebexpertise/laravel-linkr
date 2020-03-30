@@ -6,7 +6,7 @@ use Bnb\Linkr\ShortUrl;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static ShortUrl short(string $message)
+ * @method static ShortUrl shorten(string $message)
  * @method static ShortUrl info(string $alias)
  * @method static void delete(string $alias)
  *
