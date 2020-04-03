@@ -21,6 +21,9 @@ Settings can be changed using `.env` files :
 ```
 LINKR_URL=https://my.linkr.server.com
 LINKR_KEY=YourLinkrApiKey
+LINKR_PROXY_CONFIG_KEY=services.proxy.http
+LINKR_PROXY_USER_CONFIG_KEY=services.proxy.http_user
+LINKR_PROXY_PASSWORD_CONFIG_KEY=services.proxy.http_password
 ```
 
 
